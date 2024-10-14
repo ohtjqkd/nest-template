@@ -10,11 +10,11 @@ describe('Controller Tests', () => {
 
   beforeAll(async () => {
     // prepare the test environment for all test cases
-  })
+  });
 
   afterAll(async () => {
     // clean up the test environment for all test cases
-  })
+  });
 
   beforeEach(async () => {
     const moduleFixture: TestingModule = await Test.createTestingModule({
@@ -24,10 +24,10 @@ describe('Controller Tests', () => {
           provide: AppService,
           useValue: {
             getHello: jest.fn(() => 'Hello World!'),
-            getTest: jest.fn().mockResolvedValue(['test1', 'test2'])
-          }
-        }
-      ]
+            getTest: jest.fn().mockResolvedValue(['test1', 'test2']),
+          },
+        },
+      ],
     }).compile();
 
     controller = moduleFixture.get<AppController>(AppController);
@@ -36,9 +36,9 @@ describe('Controller Tests', () => {
   // test cases
   it('Define Test', async () => {
     expect(controller).toBeDefined();
-  })
+  });
 
   it('GET /', () => {
     expect(controller.getHello()).toBe('Hello World!');
-  })
+  });
 });
