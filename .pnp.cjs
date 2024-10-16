@@ -35,6 +35,7 @@ const RAW_RUNTIME_STATE =
           ["@nestjs/schematics", "virtual:716271c2db0aa570a1e7a692686752a005ad46d222b22fba4f7b464fd321419f9d092c17ef18e2852e604d872158cbbdb3b92080db3fa4dc0ba68ec31e28acc4#npm:10.1.4"],\
           ["@nestjs/testing", "virtual:716271c2db0aa570a1e7a692686752a005ad46d222b22fba4f7b464fd321419f9d092c17ef18e2852e604d872158cbbdb3b92080db3fa4dc0ba68ec31e28acc4#npm:10.4.4"],\
           ["@testcontainers/mysql", "npm:10.13.2"],\
+          ["@typegoose/typegoose", "virtual:716271c2db0aa570a1e7a692686752a005ad46d222b22fba4f7b464fd321419f9d092c17ef18e2852e604d872158cbbdb3b92080db3fa4dc0ba68ec31e28acc4#npm:12.8.0"],\
           ["@types/chai", "npm:4.3.20"],\
           ["@types/express", "npm:4.17.21"],\
           ["@types/jest", "npm:29.5.13"],\
@@ -2031,6 +2032,33 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../.yarn/berry/cache/@tsconfig-node16-npm-1.0.4-b7cb87d859-10c0.zip/node_modules/@tsconfig/node16/",\
         "packageDependencies": [\
           ["@tsconfig/node16", "npm:1.0.4"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@typegoose/typegoose", [\
+      ["npm:12.8.0", {\
+        "packageLocation": "../../.yarn/berry/cache/@typegoose-typegoose-npm-12.8.0-99713e1771-10c0.zip/node_modules/@typegoose/typegoose/",\
+        "packageDependencies": [\
+          ["@typegoose/typegoose", "npm:12.8.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:716271c2db0aa570a1e7a692686752a005ad46d222b22fba4f7b464fd321419f9d092c17ef18e2852e604d872158cbbdb3b92080db3fa4dc0ba68ec31e28acc4#npm:12.8.0", {\
+        "packageLocation": "./.yarn/__virtual__/@typegoose-typegoose-virtual-ef46a92d8f/3/.yarn/berry/cache/@typegoose-typegoose-npm-12.8.0-99713e1771-10c0.zip/node_modules/@typegoose/typegoose/",\
+        "packageDependencies": [\
+          ["@typegoose/typegoose", "virtual:716271c2db0aa570a1e7a692686752a005ad46d222b22fba4f7b464fd321419f9d092c17ef18e2852e604d872158cbbdb3b92080db3fa4dc0ba68ec31e28acc4#npm:12.8.0"],\
+          ["@types/mongoose", "npm:5.11.97"],\
+          ["lodash", "npm:4.17.21"],\
+          ["loglevel", "npm:1.9.2"],\
+          ["mongoose", "npm:8.7.1"],\
+          ["reflect-metadata", "npm:0.2.2"],\
+          ["semver", "npm:7.6.3"],\
+          ["tslib", "npm:2.8.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/mongoose",\
+          "mongoose"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -7431,6 +7459,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["loglevel", [\
+      ["npm:1.9.2", {\
+        "packageLocation": "../../.yarn/berry/cache/loglevel-npm-1.9.2-8bc06035f5-10c0.zip/node_modules/loglevel/",\
+        "packageDependencies": [\
+          ["loglevel", "npm:1.9.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["long", [\
       ["npm:5.2.3", {\
         "packageLocation": "../../.yarn/berry/cache/long-npm-5.2.3-61dddb7586-10c0.zip/node_modules/long/",\
@@ -8086,6 +8123,7 @@ const RAW_RUNTIME_STATE =
           ["@nestjs/schematics", "virtual:716271c2db0aa570a1e7a692686752a005ad46d222b22fba4f7b464fd321419f9d092c17ef18e2852e604d872158cbbdb3b92080db3fa4dc0ba68ec31e28acc4#npm:10.1.4"],\
           ["@nestjs/testing", "virtual:716271c2db0aa570a1e7a692686752a005ad46d222b22fba4f7b464fd321419f9d092c17ef18e2852e604d872158cbbdb3b92080db3fa4dc0ba68ec31e28acc4#npm:10.4.4"],\
           ["@testcontainers/mysql", "npm:10.13.2"],\
+          ["@typegoose/typegoose", "virtual:716271c2db0aa570a1e7a692686752a005ad46d222b22fba4f7b464fd321419f9d092c17ef18e2852e604d872158cbbdb3b92080db3fa4dc0ba68ec31e28acc4#npm:12.8.0"],\
           ["@types/chai", "npm:4.3.20"],\
           ["@types/express", "npm:4.17.21"],\
           ["@types/jest", "npm:29.5.13"],\
@@ -10128,6 +10166,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../.yarn/berry/cache/tslib-npm-2.7.0-21668f5c21-10c0.zip/node_modules/tslib/",\
         "packageDependencies": [\
           ["tslib", "npm:2.7.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:2.8.0", {\
+        "packageLocation": "../../.yarn/berry/cache/tslib-npm-2.8.0-6ce3ffdd05-10c0.zip/node_modules/tslib/",\
+        "packageDependencies": [\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }]\
