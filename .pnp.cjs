@@ -27,6 +27,8 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["@anatine/zod-nestjs", "virtual:716271c2db0aa570a1e7a692686752a005ad46d222b22fba4f7b464fd321419f9d092c17ef18e2852e604d872158cbbdb3b92080db3fa4dc0ba68ec31e28acc4#npm:2.0.9"],\
+          ["@anatine/zod-openapi", "virtual:716271c2db0aa570a1e7a692686752a005ad46d222b22fba4f7b464fd321419f9d092c17ef18e2852e604d872158cbbdb3b92080db3fa4dc0ba68ec31e28acc4#npm:2.2.6"],\
           ["@nestjs/cli", "virtual:716271c2db0aa570a1e7a692686752a005ad46d222b22fba4f7b464fd321419f9d092c17ef18e2852e604d872158cbbdb3b92080db3fa4dc0ba68ec31e28acc4#npm:10.4.5"],\
           ["@nestjs/common", "virtual:716271c2db0aa570a1e7a692686752a005ad46d222b22fba4f7b464fd321419f9d092c17ef18e2852e604d872158cbbdb3b92080db3fa4dc0ba68ec31e28acc4#npm:10.4.4"],\
           ["@nestjs/core", "virtual:716271c2db0aa570a1e7a692686752a005ad46d222b22fba4f7b464fd321419f9d092c17ef18e2852e604d872158cbbdb3b92080db3fa4dc0ba68ec31e28acc4#npm:10.4.4"],\
@@ -66,7 +68,8 @@ const RAW_RUNTIME_STATE =
           ["ts-loader", "virtual:716271c2db0aa570a1e7a692686752a005ad46d222b22fba4f7b464fd321419f9d092c17ef18e2852e604d872158cbbdb3b92080db3fa4dc0ba68ec31e28acc4#npm:9.5.1"],\
           ["ts-node", "virtual:716271c2db0aa570a1e7a692686752a005ad46d222b22fba4f7b464fd321419f9d092c17ef18e2852e604d872158cbbdb3b92080db3fa4dc0ba68ec31e28acc4#npm:10.9.2"],\
           ["tsconfig-paths", "npm:4.2.0"],\
-          ["typescript", "patch:typescript@npm%3A5.6.3#optional!builtin<compat/typescript>::version=5.6.3&hash=8c6c40"]\
+          ["typescript", "patch:typescript@npm%3A5.6.3#optional!builtin<compat/typescript>::version=5.6.3&hash=8c6c40"],\
+          ["zod", "npm:3.23.8"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -78,6 +81,72 @@ const RAW_RUNTIME_STATE =
           ["@ampproject/remapping", "npm:2.3.0"],\
           ["@jridgewell/gen-mapping", "npm:0.3.5"],\
           ["@jridgewell/trace-mapping", "npm:0.3.25"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@anatine/zod-nestjs", [\
+      ["npm:2.0.9", {\
+        "packageLocation": "../../.yarn/berry/cache/@anatine-zod-nestjs-npm-2.0.9-785489dd04-10c0.zip/node_modules/@anatine/zod-nestjs/",\
+        "packageDependencies": [\
+          ["@anatine/zod-nestjs", "npm:2.0.9"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:716271c2db0aa570a1e7a692686752a005ad46d222b22fba4f7b464fd321419f9d092c17ef18e2852e604d872158cbbdb3b92080db3fa4dc0ba68ec31e28acc4#npm:2.0.9", {\
+        "packageLocation": "./.yarn/__virtual__/@anatine-zod-nestjs-virtual-6e06dc7b6f/3/.yarn/berry/cache/@anatine-zod-nestjs-npm-2.0.9-785489dd04-10c0.zip/node_modules/@anatine/zod-nestjs/",\
+        "packageDependencies": [\
+          ["@anatine/zod-nestjs", "virtual:716271c2db0aa570a1e7a692686752a005ad46d222b22fba4f7b464fd321419f9d092c17ef18e2852e604d872158cbbdb3b92080db3fa4dc0ba68ec31e28acc4#npm:2.0.9"],\
+          ["@anatine/zod-openapi", "virtual:716271c2db0aa570a1e7a692686752a005ad46d222b22fba4f7b464fd321419f9d092c17ef18e2852e604d872158cbbdb3b92080db3fa4dc0ba68ec31e28acc4#npm:2.2.6"],\
+          ["@nestjs/common", "virtual:716271c2db0aa570a1e7a692686752a005ad46d222b22fba4f7b464fd321419f9d092c17ef18e2852e604d872158cbbdb3b92080db3fa4dc0ba68ec31e28acc4#npm:10.4.4"],\
+          ["@nestjs/swagger", null],\
+          ["@types/anatine__zod-openapi", null],\
+          ["@types/nestjs__common", null],\
+          ["@types/nestjs__swagger", null],\
+          ["@types/openapi3-ts", null],\
+          ["@types/zod", null],\
+          ["openapi3-ts", null],\
+          ["ts-deepmerge", "npm:6.2.1"],\
+          ["zod", "npm:3.23.8"]\
+        ],\
+        "packagePeers": [\
+          "@anatine/zod-openapi",\
+          "@nestjs/common",\
+          "@nestjs/swagger",\
+          "@types/anatine__zod-openapi",\
+          "@types/nestjs__common",\
+          "@types/nestjs__swagger",\
+          "@types/openapi3-ts",\
+          "@types/zod",\
+          "openapi3-ts",\
+          "zod"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@anatine/zod-openapi", [\
+      ["npm:2.2.6", {\
+        "packageLocation": "../../.yarn/berry/cache/@anatine-zod-openapi-npm-2.2.6-83038469f3-10c0.zip/node_modules/@anatine/zod-openapi/",\
+        "packageDependencies": [\
+          ["@anatine/zod-openapi", "npm:2.2.6"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:716271c2db0aa570a1e7a692686752a005ad46d222b22fba4f7b464fd321419f9d092c17ef18e2852e604d872158cbbdb3b92080db3fa4dc0ba68ec31e28acc4#npm:2.2.6", {\
+        "packageLocation": "./.yarn/__virtual__/@anatine-zod-openapi-virtual-10e6fd957d/3/.yarn/berry/cache/@anatine-zod-openapi-npm-2.2.6-83038469f3-10c0.zip/node_modules/@anatine/zod-openapi/",\
+        "packageDependencies": [\
+          ["@anatine/zod-openapi", "virtual:716271c2db0aa570a1e7a692686752a005ad46d222b22fba4f7b464fd321419f9d092c17ef18e2852e604d872158cbbdb3b92080db3fa4dc0ba68ec31e28acc4#npm:2.2.6"],\
+          ["@types/openapi3-ts", null],\
+          ["@types/zod", null],\
+          ["openapi3-ts", null],\
+          ["ts-deepmerge", "npm:6.2.1"],\
+          ["zod", "npm:3.23.8"]\
+        ],\
+        "packagePeers": [\
+          "@types/openapi3-ts",\
+          "@types/zod",\
+          "openapi3-ts",\
+          "zod"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -8115,6 +8184,8 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["nest-template", "workspace:."],\
+          ["@anatine/zod-nestjs", "virtual:716271c2db0aa570a1e7a692686752a005ad46d222b22fba4f7b464fd321419f9d092c17ef18e2852e604d872158cbbdb3b92080db3fa4dc0ba68ec31e28acc4#npm:2.0.9"],\
+          ["@anatine/zod-openapi", "virtual:716271c2db0aa570a1e7a692686752a005ad46d222b22fba4f7b464fd321419f9d092c17ef18e2852e604d872158cbbdb3b92080db3fa4dc0ba68ec31e28acc4#npm:2.2.6"],\
           ["@nestjs/cli", "virtual:716271c2db0aa570a1e7a692686752a005ad46d222b22fba4f7b464fd321419f9d092c17ef18e2852e604d872158cbbdb3b92080db3fa4dc0ba68ec31e28acc4#npm:10.4.5"],\
           ["@nestjs/common", "virtual:716271c2db0aa570a1e7a692686752a005ad46d222b22fba4f7b464fd321419f9d092c17ef18e2852e604d872158cbbdb3b92080db3fa4dc0ba68ec31e28acc4#npm:10.4.4"],\
           ["@nestjs/core", "virtual:716271c2db0aa570a1e7a692686752a005ad46d222b22fba4f7b464fd321419f9d092c17ef18e2852e604d872158cbbdb3b92080db3fa4dc0ba68ec31e28acc4#npm:10.4.4"],\
@@ -8154,7 +8225,8 @@ const RAW_RUNTIME_STATE =
           ["ts-loader", "virtual:716271c2db0aa570a1e7a692686752a005ad46d222b22fba4f7b464fd321419f9d092c17ef18e2852e604d872158cbbdb3b92080db3fa4dc0ba68ec31e28acc4#npm:9.5.1"],\
           ["ts-node", "virtual:716271c2db0aa570a1e7a692686752a005ad46d222b22fba4f7b464fd321419f9d092c17ef18e2852e604d872158cbbdb3b92080db3fa4dc0ba68ec31e28acc4#npm:10.9.2"],\
           ["tsconfig-paths", "npm:4.2.0"],\
-          ["typescript", "patch:typescript@npm%3A5.6.3#optional!builtin<compat/typescript>::version=5.6.3&hash=8c6c40"]\
+          ["typescript", "patch:typescript@npm%3A5.6.3#optional!builtin<compat/typescript>::version=5.6.3&hash=8c6c40"],\
+          ["zod", "npm:3.23.8"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -10006,6 +10078,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["ts-deepmerge", [\
+      ["npm:6.2.1", {\
+        "packageLocation": "../../.yarn/berry/cache/ts-deepmerge-npm-6.2.1-d8603b0ce3-10c0.zip/node_modules/ts-deepmerge/",\
+        "packageDependencies": [\
+          ["ts-deepmerge", "npm:6.2.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["ts-jest", [\
       ["npm:29.2.5", {\
         "packageLocation": "../../.yarn/berry/cache/ts-jest-npm-29.2.5-3012d53ff5-10c0.zip/node_modules/ts-jest/",\
@@ -10784,6 +10865,15 @@ const RAW_RUNTIME_STATE =
           ["archiver-utils", "npm:5.0.2"],\
           ["compress-commons", "npm:6.0.2"],\
           ["readable-stream", "npm:4.5.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["zod", [\
+      ["npm:3.23.8", {\
+        "packageLocation": "../../.yarn/berry/cache/zod-npm-3.23.8-11c49c85b5-10c0.zip/node_modules/zod/",\
+        "packageDependencies": [\
+          ["zod", "npm:3.23.8"]\
         ],\
         "linkType": "HARD"\
       }]\
