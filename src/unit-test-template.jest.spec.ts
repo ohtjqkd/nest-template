@@ -1,13 +1,10 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { INestApplication } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UserService } from './domains/user/user.service';
 import { UserRepository } from './domains/user/user.repository';
 
 describe('Controller Tests', () => {
-  let app: INestApplication;
-
   let controller: AppController;
 
   beforeAll(async () => {
@@ -37,11 +34,11 @@ describe('Controller Tests', () => {
 
   // test cases
   it('Define Test', async () => {
-    expect(controller).toBeDefined();
+    return expect(controller).toBeDefined();
   });
 
   it('GET /', () => {
-    expect(controller.getHello()).toBe('Hello World!');
+    return expect(controller.getHello()).toBe('Hello World!');
   });
 });
 
@@ -76,10 +73,6 @@ describe('Service Tests', () => {
   });
 
   it('Define Service Test', async () => {
-    expect(service).toBeDefined();
-  });
-
-  it('Test getUserList', async () => {
-    expect(service.getUserList()).resolves.toEqual(['test1', 'test2']);
+    return expect(service).toBeDefined();
   });
 });

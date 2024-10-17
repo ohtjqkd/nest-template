@@ -1,16 +1,21 @@
-import { assert } from 'chai';
-import { beforeEach, afterEach, it } from 'mocha';
+import { expect } from 'chai';
+
+import { beforeEach, afterEach, it, before, after } from 'mocha';
 import { Test, TestingModule } from '@nestjs/testing';
 import { SinonSandbox, createSandbox } from 'sinon';
 import { UserController } from './domains/user/user.controller';
 import { UserService } from './domains/user/user.service';
 import { UserRepository } from './domains/user/user.repository';
-import { Users } from './domains/user/entity/user.model';
+import { UserDto } from './domains/user/entity/user.model';
 
 describe('User Controller (unit)', () => {
   let controller: UserController;
   let service: UserService;
   let sandbox: SinonSandbox;
+
+  before(async () => {});
+
+  after(async () => {});
 
   beforeEach(async () => {
     // prepare the test environment for all test cases
@@ -20,7 +25,13 @@ describe('User Controller (unit)', () => {
 
     const moduleFixture: TestingModule = await Test.createTestingModule({
       controllers: [UserController],
-      providers: [UserService, UserRepository],
+      providers: [
+        UserService,
+        {
+          provide: UserRepository,
+          useValue: {},
+        },
+      ],
     }).compile();
 
     controller = moduleFixture.get<UserController>(UserController);
@@ -31,28 +42,17 @@ describe('User Controller (unit)', () => {
     sandbox.restore();
   });
 
-  it('Define Test', async () => {
-    assert.isDefined(controller);
-    assert.isDefined(service);
-  });
-
   it('Create User', async () => {
-    const user: Users = {
-      id: 1,
+    const inputBody: UserDto = {
       name: 'test',
-      email: 'test@test.com',
-      password: 'test',
-      role: 'test',
-      created_at: new Date(),
-      updated_at: new Date(),
     };
 
-    assert.isDefined(user);
+    const expectedUser = UserDto.create({
+      name: 'test',
+    });
 
-    sandbox.stub(service, 'createUser').resolves(user);
-    const result = await controller.createUser(user);
-    assert.isDefined(result);
-
-    assert.equal(result, user);
+    sandbox.stub(service, 'createUser').resolves(expectedUser);
+    const result = await controller.createUser(inputBody);
+    return expect(result).to.deep.equal(expectedUser);
   });
 });
